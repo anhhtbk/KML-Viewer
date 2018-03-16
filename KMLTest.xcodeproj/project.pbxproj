@@ -13,6 +13,9 @@
 		0FCCB246205C36F800F1979B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FCCB245205C36F800F1979B /* Assets.xcassets */; };
 		0FCCB249205C36F800F1979B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FCCB247205C36F800F1979B /* LaunchScreen.storyboard */; };
 		0FCCB24C205C36F800F1979B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FCCB24B205C36F800F1979B /* main.m */; };
+		0FCCB254205C37E300F1979B /* Untitled Path.kml in Resources */ = {isa = PBXBuildFile; fileRef = 0FCCB252205C37E200F1979B /* Untitled Path.kml */; };
+		0FCCB255205C37E300F1979B /* KML_Sample.kml in Resources */ = {isa = PBXBuildFile; fileRef = 0FCCB253205C37E300F1979B /* KML_Sample.kml */; };
+		2F35A48FDCC0D66CE45765D0 /* libPods-KMLTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E07F392655CDD3A65C9A0CC /* libPods-KMLTest.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,11 @@
 		0FCCB248205C36F800F1979B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0FCCB24A205C36F800F1979B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0FCCB24B205C36F800F1979B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0FCCB252205C37E200F1979B /* Untitled Path.kml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Untitled Path.kml"; sourceTree = "<group>"; };
+		0FCCB253205C37E300F1979B /* KML_Sample.kml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = KML_Sample.kml; sourceTree = "<group>"; };
+		4E07F392655CDD3A65C9A0CC /* libPods-KMLTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KMLTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EFA0BB25EC9E7D9D5D076AD /* Pods-KMLTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KMLTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-KMLTest/Pods-KMLTest.release.xcconfig"; sourceTree = "<group>"; };
+		99CEEE445A8338977FD11D81 /* Pods-KMLTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KMLTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KMLTest/Pods-KMLTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F35A48FDCC0D66CE45765D0 /* libPods-KMLTest.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +53,8 @@
 			children = (
 				0FCCB23B205C36F700F1979B /* KMLTest */,
 				0FCCB23A205C36F700F1979B /* Products */,
+				73998E3150877B87636EEB3F /* Pods */,
+				6C9C2F95791D5F4F632D3DCD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,8 +78,27 @@
 				0FCCB247205C36F800F1979B /* LaunchScreen.storyboard */,
 				0FCCB24A205C36F800F1979B /* Info.plist */,
 				0FCCB24B205C36F800F1979B /* main.m */,
+				0FCCB253205C37E300F1979B /* KML_Sample.kml */,
+				0FCCB252205C37E200F1979B /* Untitled Path.kml */,
 			);
 			path = KMLTest;
+			sourceTree = "<group>";
+		};
+		6C9C2F95791D5F4F632D3DCD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4E07F392655CDD3A65C9A0CC /* libPods-KMLTest.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		73998E3150877B87636EEB3F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				99CEEE445A8338977FD11D81 /* Pods-KMLTest.debug.xcconfig */,
+				6EFA0BB25EC9E7D9D5D076AD /* Pods-KMLTest.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -78,9 +108,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0FCCB24F205C36F800F1979B /* Build configuration list for PBXNativeTarget "KMLTest" */;
 			buildPhases = (
+				28043CF18C83A756B7AE5238 /* [CP] Check Pods Manifest.lock */,
 				0FCCB235205C36F700F1979B /* Sources */,
 				0FCCB236205C36F700F1979B /* Frameworks */,
 				0FCCB237205C36F700F1979B /* Resources */,
+				D55C68B12771E12B7262401D /* [CP] Embed Pods Frameworks */,
+				B37A6876BFD1FEDBAC60CEA6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -129,12 +162,68 @@
 			buildActionMask = 2147483647;
 			files = (
 				0FCCB249205C36F800F1979B /* LaunchScreen.storyboard in Resources */,
+				0FCCB255205C37E300F1979B /* KML_Sample.kml in Resources */,
+				0FCCB254205C37E300F1979B /* Untitled Path.kml in Resources */,
 				0FCCB246205C36F800F1979B /* Assets.xcassets in Resources */,
 				0FCCB244205C36F700F1979B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		28043CF18C83A756B7AE5238 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KMLTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B37A6876BFD1FEDBAC60CEA6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-KMLTest/Pods-KMLTest-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KMLTest/Pods-KMLTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D55C68B12771E12B7262401D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KMLTest/Pods-KMLTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0FCCB235205C36F700F1979B /* Sources */ = {
@@ -281,16 +370,18 @@
 		};
 		0FCCB250205C36F800F1979B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99CEEE445A8338977FD11D81 /* Pods-KMLTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K3H9JPWPRP;
 				INFOPLIST_FILE = KMLTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = yataome.KMLTest;
+				PRODUCT_BUNDLE_IDENTIFIER = yataome.HustMap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -298,16 +389,18 @@
 		};
 		0FCCB251205C36F800F1979B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EFA0BB25EC9E7D9D5D076AD /* Pods-KMLTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K3H9JPWPRP;
 				INFOPLIST_FILE = KMLTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = yataome.KMLTest;
+				PRODUCT_BUNDLE_IDENTIFIER = yataome.HustMap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
